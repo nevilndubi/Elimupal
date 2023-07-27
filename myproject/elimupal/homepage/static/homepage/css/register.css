@@ -1,0 +1,177 @@
+/* main2.css */
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #ffc451;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+form .field{
+  position: relative;
+  height: 30px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.login {
+  background-color: #efd49e;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+.login h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login a {
+  text-decoration: none;
+  color: rgb(2, 66, 87);
+  color: rgb(10, 135, 164);
+}
+
+.login a:hover {
+  color: blue;
+  color: #fff;
+  text-decoration: none;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: #ffc451;
+  padding: 15px;
+  padding: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0 ;
+  border-radius: 5px;
+  color: black solid;
+}
+.btn:hover {
+  background:#f1b235 ;
+  color: #fff;
+  text-decoration: none;
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.text {
+  margin-top: 30px;
+}
+.form-group {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+.form-group input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px black solid;
+  display: block;
+  width: 100%;
+  padding:0 35px 0 5px;
+  font-size: 18px;
+  color: black;
+  height: 35px;
+  height: 25px;
+  outline: none;
+  font-size: 18px;
+  font-family: courier, monaco, monospace;
+}
+input:focus ~ label,
+input:focus ~ :valid{
+  top: -5px;
+}
+.form-group input:focus,
+.form-group input:valid {
+  outline: 0;
+  border-bottom-color: #fff;
+}
+.form-group ion-icon,
+.form-group i.eye-icon {
+  position: absolute;
+  right: 15px;
+  color: black;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+.line {
+  position: relative;
+  height: 2px;
+  width: 100;
+  margin: 36px 0;
+  background-color: black;
+}
+
+.line::before {
+  content: 'Or';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #efd49e;
+  color: black;
+  padding: 0 15px;
+}
+
+.media-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+a.facebook {
+  border: 2px solid black;
+  color: black;
+  background-color: #4267b2;
+}
+ a.facebook .facebook-icon {
+  height: 28px;
+  width: 28px;
+  color: #0171d3;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+ }
+
+ .facebook-icon, 
+ .google-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+ }
+
+ a.google {
+  border: 2px solid black;
+  color: black;
+ }
+
+ a.google .google-icon {
+  height: 28px;
+  width: 28px;
+  color: black;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }

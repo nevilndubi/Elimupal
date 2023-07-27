@@ -1,0 +1,68 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+{% block title %} 
+  Register
+{% endblock %}
+
+{% block content %}
+<section container forms>
+  <div class="login">
+     <h1>Sign Up</h1>
+     <form action="{% url "register" %}" method="post">
+       {% csrf_token %}
+       <div class="form-group">
+         <ion-icon name="person-outline"></ion-icon>
+         <label for="username">Username</label>
+         <input type="text" id="username" name="username" required>
+       </div>
+       <div class="form-group">
+        <ion-icon name="mail-open-outline"></ion-icon>
+        <label for="username">Username</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+      </div>
+       <div class="form-group">
+         <i class = 'bx bx-hide eye-icon'></i>
+         <label for="password">Password</label>
+         <input type="password" id="password" class="password" name="password" required>
+       </div>
+       <div class="form-group">
+        <i class = 'bx bx-hide eye-icon'></i>
+        <label for="password">Repeat Password</label>
+        <input type="password" id="confirm_password" class="password" name="confirm_password" required>
+      </div>
+
+       <button type="submit" class="btn btn-success btn-lg">Sign Up</button>
+
+       
+       <p class="text">Already have an account? 
+         <a href="/login/" class="link register-link">Login</a>
+       </p>
+       <div class="line"></div>
+   
+       <div class="media-options">
+         <a href="#" class="field facebook">
+           <i class='bx bxl-facebook facebook-icon'></i>
+           <span>Sign Up with Facebook</span>
+         </a>
+       </div>
+   
+       <div class="media-options">
+         <a href="#" class="field google">
+           <ion-icon name="logo-google" class="google-icon"></ion-icon>
+           <span>Sign Up with Google</span>
+         </a>
+       </div>
+   
+     </form> 
+   </div>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+   <!--javascript-->
+   <script src="{% static 'homepage/login.js' %}" ></script>
+ </section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'homepage/css/register.css' %}">
+{% endblock %}

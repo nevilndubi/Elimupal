@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
+  
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'homepage/img/Elimu_pal-removebg-preview.png' %}" rel="icon">
+  <link href="{% static 'homepage/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/aos/aos.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/bootstrap-icons/bootstrap-icons.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/boxicons/css/boxicons.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/glightbox/css/glightbox.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/remixicon/remixicon.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/swiper/swiper-bundle.min.css' %}">
+
+  <!-- Online Vendors-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/css/login.css' %}">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+   Author: Opiyo Nevil Ndubi
+   Email: ndubinevil@gmail.com
+  ======================================================== -->
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+    
+    {% endblock %}
+</body>
+</html>

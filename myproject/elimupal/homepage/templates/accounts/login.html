@@ -1,0 +1,66 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+{% block title %} 
+  Login
+{% endblock %}
+
+
+{% block content %}
+<section container forms>
+ <div class="login">
+    <h1>Sign In</h1>
+    <form action="{% url 'login' %}" method="post">
+      {% csrf_token %}
+      <div class="form-group">
+        <ion-icon name="person-outline"></ion-icon>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <i class = 'bx bx-hide eye-icon'></i>
+        <label for="password">Password</label>
+        <input type="password" id="password" class="password" name="password" required>
+      </div>
+      <p class="text">
+        <a href="#" class="forgot">Forgot Password?</a>
+      </p>
+      <button type="submit" class="btn btn-success btn-lg">Login</button>
+
+    {% for message in messages %}
+    <div class="alert alert-danger" role="alert">
+        {{message}}
+    </div>
+    {% endfor %}
+      <p class="text">Don't have an account? 
+        <a href="/register/" class="link register-link">Create Account</a>
+      </p>
+      <div class="line"></div>
+  
+      <div class="media-options">
+        <a href="#" class="field facebook">
+          <i class='bx bxl-facebook facebook-icon'></i>
+          <span>Login with Facebook</span>
+        </a>
+      </div>
+  
+      <div class="media-options">
+        <a href="#" class="field google">
+          <ion-icon name="logo-google" class="google-icon"></ion-icon>
+          <span>Login with Google</span>
+        </a>
+      
+    </form> 
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  <!--javascript-->
+  <script src="{% static 'homepage/login.js' %}" ></script>
+</section>
+{% endblock %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'homepage/css/login.css' %}">
+{% endblock %}
+

@@ -1,0 +1,736 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Elimu Pal</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'homepage/img/Elimu_pal-removebg-preview.png' %}" rel="icon">
+  <link href="{% static 'homepage/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/aos/aos.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/bootstrap-icons/bootstrap-icons.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/boxicons/css/boxicons.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/glightbox/css/glightbox.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/remixicon/remixicon.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'homepage/vendor/swiper/swiper-bundle.min.css' %}">
+
+  
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp - v4.9.1
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <a href="index.html" class="logo me-auto me-lg-0"><img src="{% static 'homepage/img/Elimu_pal-removebg-preview.png' %}" alt="" class="img-fluid"></a>
+
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- --->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="/login/" class="get-started-btn scrollto">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <img src="{% static 'homepage/img/Elimu_pal-removebg-preview.png' %}" width="250" height="250">
+          <h1>Elimu Pal<span>.</span></h1>
+          <h2>Development Team Offering Digital Solutions for School Management</h2>
+        </div>
+      </div>
+   
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-book-open-fill"></i>
+            <h3><a href="">Library Management</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-wallet-3-line"></i>
+            <h3><a href="">Financial Management</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-edit-2-line"></i>
+            <h3><a href="">Academic Evaluation</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-team-fill"></i>
+            <h3><a href="">Student Data Management</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-line-chart-fill"></i>
+            <h3><a href="">Analytics</a></h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="{% static 'homepage/img/teach.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Comprehensive Open Source ERP Offering the Best School Management Software for Institutes.</h3>
+            <p class="fst-italic">
+              Our Education ERP software is designed to manage the day to day activities or operations of Educational Institutions efficiently and effectively.
+
+              It includes essential functionalities required to manage schools efficiently and automate everything remotely such as:-
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Student information and Record keeping.</li>
+              <li><i class="ri-check-double-line"></i>Staff and Faculty Management.</li>
+              <li><i class="ri-check-double-line"></i> Academic Evaluation and Gradebook Generation.</li>
+              <li><i class="ri-check-double-line"></i>Accounting, Finance and Multiple Online Payment methods</li>
+              <li><i class="ri-check-double-line"></i>Library Management and Digital library</li>
+              <li><i class="ri-check-double-line"></i>Automated Reminders via sms/email</li>
+              <li><i class="ri-check-double-line"></i>Payroll Management</li>
+              <li><i class="ri-check-double-line"></i>Parent Login and Discplinary tracking</li>
+            </ul>
+            <p>
+              Elimu Pal School Management System assits the management in taking data-driven and result oriented decisions with achieving long-term goal.
+            </p>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <a href="#" class="btn-learn-more">Create Your Profile</a>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="{% static 'homepage/img/clients/payment-1.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'homepage/img/clients/payment-2.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'homepage/img/clients/payment-3.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'homepage/img/clients/payment-4.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'homepage/img/clients/payment-5.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'homepage/img/clients/payment-6.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'homepage/img/clients/payment-7.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'homepage/img/clients/payment-8.png' %}" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-line-chart"></i>
+              <h4>Analytics</h4>
+              <p>The ERP discovers, interprets and communicates significant patterns in student and indiviual subject performances and this analysis helps teachers understand their students' learning abilities and challenges and also guage their performance as teachers</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-chalkboard"></i>
+              <h4>Exam Evaluation and Gradebook</h4>
+              <p>Our education ERP software also assists teachers to  record grades electronically, calculate averages, automatic student grading, indivial gradebook generation, class/stream performance sheet generation and they can access data on a student's performance in both online and physical programs and assessments.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-money"></i>
+              <h4>Financial Management</h4>
+              <p>Elimu Pal School Management System assists in financial accounting to prepare payrolls and in maintaining a school's financial records through income from student fee and any other internal resources and in managing expenditure</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bxs-graduation"></i>
+              <h4>Student Data Management</h4>
+              <p>The ERP offers easy collection, analysis and storage of data assisting in proper keeping of records and ease in data retrieval.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Check our Services</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-line-chart"></i></div>
+              <h4><a href="">Analytics</a></h4>
+              <p>Discovers, interprets and communicates significant patterns in student and indiviual subject performances</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-chalkboard"></i></div>
+              <h4><a href="">Exam Evaluation and Gradebook</a></h4>
+              <p>Records grades electronically, calculates averages, automatically grades students, generates gradebooks for individual students and class/stream performance sheet generation</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-money"></i></div>
+              <h4><a href="">Financial Management</a></h4>
+              <p>Assists in financial accounting to prepare payrolls and in maintaining a school's financial records through income from student fee</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxs-graduation"></i></div>
+              <h4><a href="">Student Data Management</a></h4>
+              <p>Offers easy data collection, analysis and storage of data and ease in data retrieval</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-book"></i></div>
+              <h4><a href="">Library Management</a></h4>
+              <p>Library resource management through encoding and storing books and materials' data thus making it easier to add and delete book entries enhancing the efficiency and swiftness in accurately getting information </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-group"></i></div>
+              <h4><a href="">Staff and Faculty Management</a></h4>
+              <p>Includes the management keeping their teams on track, budget and plan for projects, monitor inventory and preparing documents and presentations</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Join us Today</h3>
+          <p> Join today to access our Comprehensive Open Source ERP Offering the Best School Management Software for Institutes.Together with the aid of our network of proffesionals you'll be able unlock your next exclusive opportunity to manage the day to day activities or operations of your Educational Institutions efficiently and effectively. Be free to do what you love by automating repetitive tasks and more time teaching.</p>
+          <a class="cta-btn" href="#">Create your Profil</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+       <!-- ======= Features Section ======= -->
+        <section id="features" class="features">
+          <div class="container">
+    
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1">
+                <div class="icon-box mt-5 mt-lg-0">
+                  <i class="bx bxs-edit"></i>
+                  <h4>Zero charges to join</h4>
+                  <p>Register at zero cost and access our Comprehensive Open Source ERP Offering the Best School Management Software for Institutes.</p>
+                </div>
+                <div class="icon-box mt-5">
+                  <i class="bx bx-clipboard"></i>
+                  <h4>Endless opportunities</h4>
+                  <p> Explore ceaseless opportunities to work with our numerous features day and night </p>
+                </div>
+                <div class="icon-box mt-5">
+                  <i class="bx bxs-time-five"></i>
+                  <h4>24/7 Support</h4>
+                  <p>We offer 24/7 round clock response to immediately react to clients' queries.</p>
+                </div>
+                <div class="icon-box mt-5">
+                  <i class="bx bxs-credit-card-alt"></i>
+                  <h4>Multiple payment methods</h4>
+                  <p> We offer various modes of payments tailor-made to cater for the clients' diverse needs.
+                      We also foresee that all clients receive a fair deal and we deliver value to your payment.
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </section><!-- End Features Section -->
+
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>What we have achieved so far</h3>
+              <p>
+                In our interim of operations, we have managed to deliver exemplary service through our Comprehensive Open Source ERP that is the Best School Management Software for learning Institutes. With the aid of our network of proffesionals we've been able unlock exclusive opportunities to manage the day to day activities or operations of Educational Institutions efficiently and effectively. The following are a few milestones we've managed to attain in our time of service:
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="162" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Happy Users</strong> who have been served to satisfaction.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="16" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Institutions</strong> Successfully completed registration and are enjoying our Comprehensive Open Source ERP that is the Best School Management Software for learning Institutes.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="1341" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Hours of Support</strong> with 24/7 round clock response to immediately react to clients' queries.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-person-workspace"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Hard Workers</strong> committed to deliver quality and proffesionalism.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Emily Wanjiku Muthoni</h3>
+                <h4>Head Teacher (St. Mary's Primary School)</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I have been using this ERP software for school management developed by Elimupal and it has truly transformed our administrative processes. From student enrollment to attendance tracking and exam management, everything is now automated and efficient. The system is user-friendly and tailored specifically to meet the needs of Kenyan schools. I highly recommend it to all schools looking to streamline their operations.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Michael Omondi Okoth</h3>
+                <h4>Parent (Greenfield Secondary School)</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  As a parent, I am amazed by the convenience and transparency that Elimupal ERP software brings to our school. I can easily access my child's academic progress, attendance records and even communicate with teachers through the system. It has greatly improved parent-school communication and involvement. I'm grateful for this innovative solution.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jennifer Nyambura Mwangi</h3>
+                <h4>School Administrator  (Joyland Academy)</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  The ERP software developed by Elimupal has revolutionized our school's administrative tasks. It simplifies fee management, generates detailed financial reports and automates payroll processing. The system saves us countless hours of manual work and reduces the chances of errors. It's an indispensable tool for any school aiming for efficiency and accuracy in financial management.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Anderson Kariuki Njoroge</h3>
+                <h4>Teacher (Riverside High School)</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Since we started using Elimupal ERP software, classroom management has become seamless and organized. The system allows me to plan lessons, upload teaching materials and share resources with my students effortlessly. It also provides a centralized platform for student grading and progress tracking. This software has significantly enhanced my teaching experience.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Mitchell Achieng Odera</h3>
+                <h4>Librarian  (Sunrise Academy)</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Thanks to Elimupal ERP software, our school library has undergone a digital transformation. The system provides an efficient way to manage book cataloging, check-in/check-out and inventory tracking. Students can now easily search for books and reserve them online. The software has made our library more accessible and user-friendly for both students and staff.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Robert Kipchirchir Rono</h3>
+                <h4>IT Coordinator  (Victoria High School)</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  As an IT coordinator, I am highly impressed by the comprehensive features and robustness of Elimupal ERP software. It seamlessly integrates different modules, such as student information, timetable management, and transportation tracking. The software is scalable and adaptable to our school's specific needs. It has significantly improved our overall operational efficiency and data management.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Check our Team</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127649.13044243748!2d37.00207434524478!3d-1.1351346863450253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4616a21d035d%3A0xd46c6efa3589f45f!2sJuja!5e0!3m2!1sen!2ske!4v1683637161765!5m2!1sen!2skeframeborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Juja, Kiambu, KE 00900</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>ndubinevil@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+257 6968 6138</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <img src="{% static 'homepage/img/Elimu_pal-removebg-preview.png' %}" alt="" class="img-fluid" style="width: 50px; height: 50px;">
+              <p>
+                <br>Juja, Kiambu, KE 00900
+                <br>Kiambu, Kenya<br>
+                <strong>Phone:</strong> +257 6968 6138<br>
+                <strong>Email:</strong> ndubinevil@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Staff and Faculty Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Library Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Exam Evaluation and Gradebook</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Financial Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Student Data Management</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <p>Development Team Offering Digital Solutions for School Management</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+         <P>Copyright &copy;</P> 
+        <img src="{% static 'homepage/img/Elimu_pal-removebg-preview.png' %}" alt="" class="img-fluid" style="width: 30px; height: 30px;"> 
+        <P>All Rights Reserved</P>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Designed by <a href="#">Nevil</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'homepage/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'homepage/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'homepage/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'homepage/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'homepage/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'homepage/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'homepage/vendor/php-email-form/validate.js' %}"></script>
+  
+  <!-- Template Main JS File -->
+    <script src="{% static 'homepage/main.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hidden {
+          display: none;
+        }
+    </style>
+
+    
+    <title>trial</title>
+</head>
+<body>
+    <form action="">
+      <li class="form-line jf-required" data-type="control_radio" id="id_9">
+        <label class="form-label form-label-top form-label-auto" id="label_9">School Level<span class="form-required">*</span></label>
+        <div id="cid_9" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-multiple-column">
+            <span class="form-radio-item">
+              <span class="dragger-item">
+                <input type="radio" class="form-radio validate[required]" id="input_9_0" name="school_level" value="secondary" required="" />
+                <label for="input_9_0">Secondary School</label>
+              </span>
+            </span>
+            <span class="form-radio-item">
+              <span class="dragger-item">
+                <input type="radio" class="form-radio validate[required]" id="input_9_1" name="school_level" value="primary" required="" />
+                <label for="input_9_1">Primary School</label>
+              </span>
+            </span>
+          </div>
+        </div>
+      </li>
+      
+      <div id="secondary-curriculum-section" class="hidden">
+        <li class="form-line" data-type="control_radio" id="id_10">
+          <label class="form-label form-label-top form-label-auto" id="label_10">Secondary School Curriculum<span class="form-required">*</span></label>
+          <div id="cid_10" class="form-input-wide" data-layout="full">
+            <div class="form-multiple-column">
+              <span class="form-radio-item">
+                <span class="dragger-item">
+                  <input type="radio" class="form-radio" id="input_10_0" name="secondary_curriculum" value="junior_secondary" />
+                  <label for="input_10_0">Junior Secondary School</label>
+                </span>
+              </span>
+              <span class="form-radio-item">
+                <span class="dragger-item">
+                  <input type="radio" class="form-radio" id="input_10_1" name="secondary_curriculum" value="senior_secondary" />
+                  <label for="input_10_1">Senior Secondary School</label>
+                </span>
+              </span>
+              <span class="form-radio-item">
+                <span class="dragger-item">
+                  <input type="radio" class="form-radio" id="input_10_2" name="secondary_curriculum" value="8_4_4" />
+                  <label for="input_10_2">8-4-4 System</label>
+                </span>
+              </span>
+            </div>
+          </div>
+        </li>
+      
+        <div id="secondary-subjects-section" class="hidden">
+          <li class="form-line" data-type="control_checkbox" id="id_11">
+            <label class="form-label form-label-top form-label-auto" id="label_11">Subjects Offered<span class="form-required">*</span></label>
+            <div id="cid_11" class="form-input-wide" data-layout="full">
+              <div class="form-multiple-column">
+                <!-- Add checkboxes for each subject in the Junior Secondary School curriculum -->
+                <input type="checkbox" class="form-checkbox" id="subject_jss_english" name="subject_jss_english" value="English" />
+                <label for="subject_jss_english">English</label>
+      
+                <!-- Add checkboxes for other subjects -->
+      
+              </div>
+            </div>
+          </li>
+        </div>
+      </div>
+      
+      <div id="primary-curriculum-section" class="hidden">
+        <li class="form-line" data-type="control_radio" id="id_12">
+          <label class="form-label form-label-top form-label-auto" id="label_12">Primary School Curriculum<span class="form-required">*</span></label>
+          <div id="cid_12" class="form-input-wide" data-layout="full">
+            <div class="form-multiple-column">
+              <span class="form-radio-item">
+                <span class="dragger-item">
+                  <input type="radio" class="form-radio" id="input_12_0" name="primary_curriculum" value="national" />
+                  <label for="input_12_0">National Curriculum</label>
+                </span>
+              </span>
+              <span class="form-radio-item">
+                <span class="dragger-item">
+                  <input type="radio" class="form-radio" id="input_12_1" name="primary_curriculum" value="international" />
+                  <label for="input_12_1">International Curriculum</label>
+                </span>
+              </span>
+            </div>
+          </div>
+        </li>
+      
+        <div id="primary-subjects-section" class="hidden">
+          <li class="form-line" data-type="control_checkbox" id="id_13">
+            <label class="form-label form-label-top form-label-auto" id="label_13">Subjects Offered<span class="form-required">*</span></label>
+            <div id="cid_13" class="form-input-wide" data-layout="full">
+              <div class="form-multiple-column">
+                <!-- Add checkboxes for each subject in the National Curriculum for Primary School -->
+      
+              </div>
+            </div>
+          </li>
+      
+          <div id="education-system-section" class="hidden">
+            <li class="form-line" data-type="control_radio" id="id_14">
+              <label class="form-label form-label-top form-label-auto" id="label_14">Education System<span class="form-required">*</span></label>
+              <div id="cid_14" class="form-input-wide" data-layout="full">
+                <div class="form-multiple-column">
+                  <span class="form-radio-item">
+                    <span class="dragger-item">
+                      <input type="radio" class="form-radio" id="input_14_0" name="education_system" value="cbc" />
+                      <label for="input_14_0">Competency Based Curriculum (CBC)</label>
+                    </span>
+                  </span>
+                  <span class="form-radio-item">
+                    <span class="dragger-item">
+                      <input type="radio" class="form-radio" id="input_14_1" name="education_system" value="844" />
+                      <label for="input_14_1">8-4-4 System</label>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </li>
+      
+            <div id="primary-education-system-subjects-section" class="hidden">
+              <li class="form-line" data-type="control_checkbox" id="id_15">
+                <label class="form-label form-label-top form-label-auto" id="label_15">Subjects Offered<span class="form-required">*</span></label>
+                <div id="cid_15" class="form-input-wide" data-layout="full">
+                  <div class="form-multiple-column">
+                    <!-- Add checkboxes for each subject in the selected education system (e.g., CBC or 8-4-4) for Primary School -->
+      
+                  </div>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+    <script>
+        const secondaryCurriculumSection = document.getElementById('secondary-curriculum-section');
+        const secondarySubjectsSection = document.getElementById('secondary-subjects-section');
+        const primaryCurriculumSection = document.getElementById('primary-curriculum-section');
+        const primarySubjectsSection = document.getElementById('primary-subjects-section');
+        const educationSystemSection = document.getElementById('education-system-section');
+        const primaryEducationSystemSubjectsSection = document.getElementById('primary-education-system-subjects-section');
+      
+        const radioSecondarySchool = document.getElementById('input_9_0');
+        const radioPrimarySchool = document.getElementById('input_9_1');
+        const radioJuniorSecondary = document.getElementById('input_10_0');
+        const radioSeniorSecondary = document.getElementById('input_10_1');
+        const radio844System = document.getElementById('input_10_2');
+        const radioNationalCurriculum = document.getElementById('input_12_0');
+        const radioInternationalCurriculum = document.getElementById('input_12_1');
+        const radioCBC = document.getElementById('input_14_0');
+        const radio844SystemEducation = document.getElementById('input_14_1');
+      
+        radioSecondarySchool.addEventListener('change', function () {
+          if (radioSecondarySchool.checked) {
+            secondaryCurriculumSection.classList.remove('hidden');
+            secondarySubjectsSection.classList.remove('hidden');
+            primaryCurriculumSection.classList.add('hidden');
+            primarySubjectsSection.classList.add('hidden');
+          }
+        });
+      
+        radioPrimarySchool.addEventListener('change', function () {
+          if (radioPrimarySchool.checked) {
+            secondaryCurriculumSection.classList.add('hidden');
+            secondarySubjectsSection.classList.add('hidden');
+            primaryCurriculumSection.classList.remove('hidden');
+            primarySubjectsSection.classList.remove('hidden');
+          }
+        });
+      
+        radioJuniorSecondary.addEventListener('change', function () {
+          if (radioJuniorSecondary.checked || radioSeniorSecondary.checked) {
+            educationSystemSection.classList.remove('hidden');
+            primaryEducationSystemSubjectsSection.classList.add('hidden');
+          }
+        });
+      
+        radioSeniorSecondary.addEventListener('change', function () {
+          if (radioJuniorSecondary.checked || radioSeniorSecondary.checked) {
+            educationSystemSection.classList.remove('hidden');
+            primaryEducationSystemSubjectsSection.classList.add('hidden');
+          }
+        });
+      
+        radio844System.addEventListener('change', function () {
+          if (radio844System.checked) {
+            educationSystemSection.classList.remove('hidden');
+            primaryEducationSystemSubjectsSection.classList.remove('hidden');
+          }
+        });
+      
+        radioNationalCurriculum.addEventListener('change', function () {
+          if (radioNationalCurriculum.checked) {
+            educationSystemSection.classList.add('hidden');
+            primaryEducationSystemSubjectsSection.classList.add('hidden');
+          }
+        });
+      
+        radioInternationalCurriculum.addEventListener('change', function () {
+          if (radioInternationalCurriculum.checked) {
+            educationSystemSection.classList.remove('hidden');
+            primaryEducationSystemSubjectsSection.classList.remove('hidden');
+          }
+        });
+      
+        radioCBC.addEventListener('change', function () {
+          if (radioCBC.checked || radio844SystemEducation.checked) {
+            primaryEducationSystemSubjectsSection.classList.remove('hidden');
+          }
+        });
+      
+        radio844SystemEducation.addEventListener('change', function () {
+          if (radioCBC.checked || radio844SystemEducation.checked) {
+            primaryEducationSystemSubjectsSection.classList.remove('hidden');
+          }
+        });
+      </script>
+</body>
+</html>
